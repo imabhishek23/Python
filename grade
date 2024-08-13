@@ -1,0 +1,12 @@
+marks= float(input("enter your marks:"))
+
+if(marks>90):
+    print("You are in A+ grade")
+elif(marks>80):
+    print("you are in B grade")
+elif(marks>70):
+    print("you are in C grade")
+elif(marks>60):
+    print("you are in D grade")
+else:
+    print("you are fail ")
