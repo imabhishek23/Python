@@ -1,0 +1,17 @@
+# Input for customer's credit score, annual income, and debt-to-income ratio
+credit_score = int(input("Enter your credit score: "))
+annual_income = float(input("Enter your annual income ($): "))
+debt_to_income_ratio = float(input("Enter your debt-to-income ratio (as a decimal): "))
+
+# Criteria for loan eligibility
+credit_score_criteria = 650
+income_criteria = 30000
+debt_to_income_criteria = 0.4
+
+# Check if the customer meets all the criteria
+if (credit_score > credit_score_criteria and 
+    annual_income >= income_criteria and 
+    debt_to_income_ratio < debt_to_income_criteria):
+    print("Loan Approved")
+else:
+    print("Loan Denied")
